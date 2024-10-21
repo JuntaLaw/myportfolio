@@ -1,16 +1,18 @@
+'use client'
+
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Camera, Code, Mail, MessageSquare, Phone, Video } from "lucide-react"
 import Link from "next/link"
 
-export default function LandingPage() {
+export function LandingPageComponent() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cyan-500 via-purple-500 to-pink-500">
+    <div className="min-h-screen bg-gradient-to-br from-purple-400 via-pink-500 to-red-500">
       <header className="sticky top-0 z-50 backdrop-blur-md bg-white/30 border-b border-white/20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-2xl font-bold text-white">
-            Junko Sato
+            CreativeVision
           </Link>
           <nav className="hidden md:flex space-x-4">
             <Link href="#services" className="text-white hover:text-pink-200 transition-colors">
