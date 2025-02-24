@@ -55,7 +55,7 @@ export function Profile() {
               <span className="w-2 h-2 bg-pink-300 rounded-full flex-shrink-0 mt-2"></span>
               <div>
                 <h4 className="font-semibold text-white">2025年現在　フリーランス</h4>
-                <p className="text-slate-50 mt-1">2024年10月より、映像以外へも活動の幅を広げるため、フリーランスに。</p>
+                <p className="text-slate-50 mt-1">2024年11月より、映像以外へも活動の幅を広げるため、フリーランスに。</p>
               </div>
             </li>
           </ul>
