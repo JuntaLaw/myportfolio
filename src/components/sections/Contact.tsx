@@ -1,7 +1,6 @@
 import { FaInstagram, FaFacebook, FaGithub } from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
 import { Mail, Phone } from "lucide-react"
-import Link from "next/link"
 export function Contact() {
   return (
     <section id="contact" className="backdrop-blur-md bg-white/20 p-8 rounded-lg border border-white/30 mt-20 mx-20">

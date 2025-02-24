@@ -1,4 +1,4 @@
-import { Camera, Code, Mail, MessageSquare, Phone, Video, Sticker, BicepsFlexed, SquareArrowRight } from "lucide-react"
+import { Code, Sticker, BicepsFlexed } from "lucide-react"
 import { ProfileBlock } from "@/components/profile/ProfileBlock"
 
 export function Profile() {

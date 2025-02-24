@@ -1,10 +1,4 @@
 import { PortfolioItem } from "@/components/portfolio/PortfolioItem"
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"
 
 export function Portfolio() {
   return (
