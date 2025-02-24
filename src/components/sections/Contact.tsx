@@ -1,11 +1,15 @@
 import { FaInstagram, FaFacebook, FaGithub } from 'react-icons/fa'
 import { FaXTwitter } from "react-icons/fa6";
-import { Mail, Phone } from "lucide-react"
+import { Mail, Phone, SmilePlus } from "lucide-react"
 export function Contact() {
   return (
     <section id="contact" className="backdrop-blur-md bg-white/20 p-8 rounded-lg border border-white/30 mt-20 mx-20">
-      <h2 className="text-3xl font-bold text-white mb-8 text-center">Get in Touch</h2>
-      <div className="grid md:grid-cols-2 gap-8 mx-20">
+
+      <h2 className="text-3xl font-bold text-white mb-8  mx-10 text-left">Contact
+
+      </h2>
+
+      <div className="grid md:grid-cols-3 gap-10 mx-10">
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
             <Phone className="w-6 h-6 text-pink-300" />
@@ -15,6 +19,8 @@ export function Contact() {
             <Mail className="w-6 h-6 text-pink-300" />
             <span className="text-white">junta_law@me.com</span>
           </div>
+        </div>
+        <div className="space-y-4">
           <div className="flex items-center space-x-4">
             <FaXTwitter className="w-6 h-6 text-pink-300" />
             <a
@@ -25,9 +31,6 @@ export function Contact() {
             >
               @myariadcom</a>
           </div>
-        </div>
-        <div className="space-y-4">
-
           <div className="flex items-center space-x-4">
             <FaFacebook className="w-6 h-6 text-pink-300" />
             <a
@@ -39,6 +42,9 @@ export function Contact() {
               junko.sato.7509
             </a>
           </div>
+        </div>
+        <div className="space-y-4">
+
           <div className="flex items-center space-x-4">
             <FaInstagram className="w-6 h-6 text-pink-300" />
             <a
@@ -61,6 +67,8 @@ export function Contact() {
               JuntaLaw</a>
           </div>
         </div>
+
+
       </div>
     </section>
 
