@@ -9,7 +9,7 @@ export function Portfolio() {
         {/* ポートフォリオ1件目 */}
         <PortfolioItem
           title="新規事業案件 撮影＆編集"
-          videoUrl="https://www.youtube.com/embed/xxxxx"
+          videoUrl="https://www.youtube.com/embed/MxdqvZI623c?si=1r-YiutuWPKT4QiU"
         >
           <p>ジーズアカデミーの卒業生仲間との新規構想事業案件。サンプル映像としての制作で、撮影・編集ともワンオペで行っている最新作例。</p>
           <ul className="text-slate-50 mb-10 space-y-4">
