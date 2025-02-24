@@ -1,4 +1,4 @@
-import { Code, Sticker, BicepsFlexed } from "lucide-react"
+import { Code, Sticker, BicepsFlexed, Video } from "lucide-react"
 import { ProfileBlock } from "@/components/profile/ProfileBlock"
 
 export function Profile() {
