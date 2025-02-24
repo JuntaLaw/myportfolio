@@ -1,35 +1,35 @@
 'use client'
 
+import Link from "next/link"
+import { Button } from "../ui/button"
 import { signOut } from "next-auth/react"
-import { Button } from "@/components/ui/button"
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/10 border-b border-white/20">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <nav>
-          <ul className="flex space-x-6">
-            <li>
-              <a href="#hero" className="text-white hover:text-pink-300 transition-colors">Home</a>
-            </li>
-            <li>
-              <a href="#profile" className="text-white hover:text-pink-300 transition-colors">Profile</a>
-            </li>
-            <li>
-              <a href="#portfolio" className="text-white hover:text-pink-300 transition-colors">Portfolio</a>
-            </li>
-            <li>
-              <a href="#contact" className="text-white hover:text-pink-300 transition-colors">Contact</a>
-            </li>
-          </ul>
+    <header className="sticky top-0 z-50 backdrop-blur-md bg-white/30 border-b border-white/20">
+      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <Link href="/" className="text-2xl font-bold text-white">
+          佐藤 淳子
+        </Link>
+        <nav className="hidden md:flex space-x-8">
+          <Link href="#profile" className="text-white hover:text-pink-200 transition-colors">
+            自己紹介
+          </Link>
+          <Link href="#portfolio" className="text-white hover:text-pink-200 transition-colors">
+            ポートフォリオ
+          </Link>
+          <Link href="#contact" className="text-white hover:text-pink-200 transition-colors">
+            Contact
+          </Link>
         </nav>
 
         <Button
           onClick={() => signOut({ callbackUrl: '/login' })}
-          className="bg-pink-500 hover:bg-pink-600 text-white"
+          variant="outline" className="bg-slate-600/20 text-white border-white/30 hover:bg-white/30"
         >
-          ログアウト
+          Log Out
         </Button>
+
       </div>
     </header>
   )
