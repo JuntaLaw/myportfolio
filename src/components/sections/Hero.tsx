@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Image from 'next/image'
 
 export function Hero() {
   return (
@@ -20,12 +21,20 @@ export function Hero() {
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-white/30 backdrop-blur-md">
-            <img
-              src="/placeholder.svg?height=256&width=256"
-              alt="Junko Sato"
-              className="w-full h-full object-cover"
-            />
+          <div className="relative w-64 h-64">
+            {/* 背景のブラー効果 */}
+            <div className="absolute inset-0 -m-6 bg-white/10 backdrop-blur-xl rounded-3xl filter blur-sm" />
+
+            {/* メイン画像 */}
+            <div className="relative w-full h-full">
+              <Image
+                src="/images/profilephoto.png"
+                alt="Junko Sato"
+                fill
+                className="object-cover filter contrast-85 brightness-110 saturate-90"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>

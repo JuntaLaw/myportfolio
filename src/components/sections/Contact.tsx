@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Camera, Code, Mail, MessageSquare, Phone, Twitter, Facebook, BicepsFlexed, SquareArrowRight } from "lucide-react"
+import { FaInstagram, FaFacebook, FaGithub } from 'react-icons/fa'
+import { FaXTwitter } from "react-icons/fa6";
+import { Mail, Phone } from "lucide-react"
 import Link from "next/link"
 export function Contact() {
   return (
@@ -9,32 +10,60 @@ export function Contact() {
         <div className="space-y-4">
           <div className="flex items-center space-x-4">
             <Phone className="w-6 h-6 text-pink-300" />
-            <span className="text-white">+1 (555) 123-4567</span>
+            <span className="text-white">+81 (080) 5053-7770</span>
           </div>
           <div className="flex items-center space-x-4">
             <Mail className="w-6 h-6 text-pink-300" />
-            <span className="text-white">hello@creativevision.com</span>
+            <span className="text-white">junta_law@me.com</span>
           </div>
           <div className="flex items-center space-x-4">
-            <MessageSquare className="w-6 h-6 text-pink-300" />
-            <span className="text-white">@creativevision</span>
+            <FaXTwitter className="w-6 h-6 text-pink-300" />
+            <a
+              href="https://x.com/myariadcom"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-300 transition-colors"
+            >
+              @myariadcom</a>
           </div>
         </div>
         <div className="space-y-4">
+
           <div className="flex items-center space-x-4">
-            <Twitter className="w-6 h-6 text-pink-300" />
-            <span className="text-white">+1 (555) 123-4567</span>
+            <FaFacebook className="w-6 h-6 text-pink-300" />
+            <a
+              href="https://facebook.com/junko.sato.7509"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-300 transition-colors"
+            >
+              junko.sato.7509
+            </a>
           </div>
           <div className="flex items-center space-x-4">
-            <Facebook className="w-6 h-6 text-pink-300" />
-            <span className="text-white">hello@creativevision.com</span>
+            <FaInstagram className="w-6 h-6 text-pink-300" />
+            <a
+              href="https://www.instagram.com/juntalaw1114/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-300 transition-colors"
+            >
+              @juntalaw1114
+            </a>
           </div>
           <div className="flex items-center space-x-4">
-            <MessageSquare className="w-6 h-6 text-pink-300" />
-            <span className="text-white">@creativevision</span>
+            <FaGithub className="w-6 h-6 text-pink-300" />
+            <a
+              href="https://github.com/JuntaLaw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white hover:text-pink-300 transition-colors"
+            >
+              JuntaLaw</a>
           </div>
         </div>
       </div>
     </section>
+
   )
 }

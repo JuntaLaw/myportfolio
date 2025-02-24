@@ -1,11 +1,18 @@
+import { redirect } from 'next/navigation'
+import { getServerSession } from 'next-auth'
 import { Hero } from "@/components/sections/Hero"
 import { Header } from "@/components/sections/Header"
 import { Profile } from "@/components/sections/Profile"
 import { Portfolio } from "@/components/sections/Portfolio"
 import { Contact } from "@/components/sections/Contact"
 
+export default async function Home() {
+  const session = await getServerSession()
 
-export default function Home() {
+  if (!session) {
+    redirect('/login')
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-sky-500 via-purple-500 to-rose-500">
       <Header />
