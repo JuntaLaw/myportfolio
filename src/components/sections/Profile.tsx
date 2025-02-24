@@ -119,7 +119,7 @@ export function Profile() {
               <span className="w-2 h-2 bg-pink-300 rounded-full flex-shrink-0 mt-2"></span>
               <div>
                 <h4 className="font-semibold text-white">ゲーム開発・UIデザイン</h4>
-                <p className="text-slate-50 mt-1">ROBLOXゲームの開発プログラミング（使用言語: Lua）や、ゲーム内のUIデザイン、アイコンやゲーム内アイテムなどの2Dデザイン、演出高価のデザインなども実績あり。</p>
+                <p className="text-slate-50 mt-1">ROBLOXゲームの開発プログラミング（使用言語: Lua）や、ゲーム内のUIデザイン、アイコンやゲーム内アイテムなどの2Dデザイン、演出エフェクトのデザインなども実績あり。</p>
               </div>
             </li>
           </ul>
